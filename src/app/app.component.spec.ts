@@ -19,13 +19,13 @@ describe('AppComponent', () => {
   it(`should have as title 'recipe-shopping-list'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('recipe-shopping-list');
+    expect(app.title).toEqual('recipe-shopping-list-old');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('recipe-shopping-list app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('recipe-shopping-list-old app is running!');
   });
 });
